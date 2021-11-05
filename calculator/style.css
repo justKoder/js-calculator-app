@@ -1,0 +1,115 @@
+html,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom right, #03fcbe, #03fcf8);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 400px;
+}
+
+.display {
+    width: 100%;
+    height: 130px;
+    text-align: right;
+    line-height: 50px;
+    font-size: 30px;
+    color: rgb(209, 209, 209);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.display-input,
+.display-output {
+    padding: 0 20px;
+    overflow-y: hidden;
+    margin: 0 auto;
+    letter-spacing: 2px;
+}
+
+.display-input {
+    direction: ltr;
+
+}
+
+.display-output,
+.operations {
+    padding: 0 20px;
+    width: 100%;
+    height: 35px;
+}
+
+.result {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+/* width */
+::-webkit-scrollbar {
+    height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.operations {
+    font-size: 12px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+.buttons button {
+    min-height: 100px;
+    min-width: 100px;
+    height: auto;
+    width: auto;
+    font-size: 25px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(9px);
+    border: 1px solid #cccccc;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(9px);
+}
+
+.double-column {
+    grid-column: span 2;
+}
+
+.double-row {
+    grid-row: span 2;
+}
